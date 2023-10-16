@@ -1,0 +1,38 @@
+{
+  "name": "blazedashhbe",
+  "version": "1.0.0",
+  "description": "blazedashh backend service",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsc && concurrently \"npx tsc --watch\" \"nodemon -q ./dist/index.js\"",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/memory-cache": "^0.2.3",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^7.5.2",
+    "tslog": "^4.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.6.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.49.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}
